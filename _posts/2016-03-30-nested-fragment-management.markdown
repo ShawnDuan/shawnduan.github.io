@@ -54,7 +54,6 @@ public interface IFragmentStackHolder {
 
 ```java
 public class MainFragment extends Fragment implements IFragmentStackHolder {
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
@@ -81,9 +80,8 @@ public class MainFragment extends Fragment implements IFragmentStackHolder {
         transaction.commit();
     }
     
-	@Override
+    @Override
     public void replaceFragment(int containerId, Fragment frag, ArrayList<Pair<View, String>> eltrans) {
-
         FragmentTransaction transaction = mFragmentManager.beginTransaction();
         
         String backStackName = frag.getBackStackName();
@@ -113,7 +111,7 @@ public class MainFragment extends Fragment implements IFragmentStackHolder {
     android:fitsSystemWindows="true" 
     tools:openDrawer="start">
 
-	<include layout="@layout/content_frags" />
+    <include layout="@layout/content_frags" />
 
     <android.support.design.widget.NavigationView android:id="@+id/nav_view"
         android:layout_width="wrap_content" 
