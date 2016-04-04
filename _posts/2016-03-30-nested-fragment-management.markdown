@@ -4,10 +4,6 @@ title:  "Nested Fragment Management"
 date:   2016-03-30 21:30:36 -0700
 categories: [Android, Fragment]
 ---
-
-# Nested Fragment Management
-
-
 Since Android 4.2 (API 17), [Nested Fragment](http://developer.android.com/about/versions/android-4.2.html#NestedFragments) becames available, which is also available in Android Support Library.
 A handy method is provided as `getChildFragmentManager()`, which will return a private FragmentManager for placing and managing Fragments inside of this Fragment.
 
@@ -26,7 +22,6 @@ protected void onCreate(Bundle savedInstanceState) {
    }
 }
 ```
-
 
 **main.xml**
 
@@ -156,14 +151,10 @@ if (getParentFragment() instanceof IFragmentStackHolder) {
 }
 ```
 
-
 > **Note:** 
 > 
 > The hierarchy is maintained like this: 
 `MainActivity --> MainFragment --> InnerFragment`, Where `InnerFragment` can be either a normal single Fragment or another Fragment-container, by implementing `IFragmentStackHolder`.
 
-
 ## Conclusion
 Activity transitions could be expensive sometime. Thus, many teams are believing in the philosophy that you should consider using Fragments whenever it's possible, instead of using Activity. Activity or Fragment? To discuss this dillema is not the intent in this airtical. However, once you decide to follow this "Fragment-ism" philosophy, you should keep your fragment backstack hierarchical and organized -- using nested fragments and `getChildFragmentManager()` could be a nice choice.
-
-
