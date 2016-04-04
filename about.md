@@ -1,15 +1,20 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I'm Shawn Duan, a junior software engineer with two years experience. I got my master degree from [Penn State University](http://www.psu.edu/). Now I'm working in [Seagate Technology](http://www.seagate.com/), as an Android developer.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+Follow Me:
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+* [GitHub](https://github.com/ShawnDuan)
+* [LinkedIn](https://www.linkedin.com/in/shawnwduan)
+* [Weibo 微博](http://weibo.com/duanwx)
+
+Contact Me:
+
+* Email: *duan1216@gmail.com*
+* Wechat: *duan1216*
+
+My Resume is [here](/files/resume.pdf).
