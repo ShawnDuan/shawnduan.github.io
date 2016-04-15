@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ReactiveX / RxJava / RxAndroid"
+title:  "RxJava at First Glance"
 date:   2016-04-13
 categories: [Android, RxJava]
 ---
