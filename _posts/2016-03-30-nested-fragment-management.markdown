@@ -2,6 +2,7 @@
 layout: post
 title:  "Nested Fragment Management"
 date:   2016-03-30 21:30:36 -0700
+comments: true
 categories: [Android, Fragment]
 ---
 Since Android 4.2 (API 17), [Nested Fragment](http://developer.android.com/about/versions/android-4.2.html#NestedFragments) becames available, which is also available in Android Support Library.

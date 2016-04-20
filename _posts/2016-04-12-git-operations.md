@@ -2,6 +2,7 @@
 layout: post
 title:  "Most Used Git Operations"
 date:   2016-04-12
+comments: true
 categories: [Git]
 ---
 

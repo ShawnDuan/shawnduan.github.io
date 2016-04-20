@@ -2,6 +2,7 @@
 layout: post
 title:  "RxJava at First Glance"
 date:   2016-04-13
+comments: true
 categories: [Android, RxJava]
 ---
 
