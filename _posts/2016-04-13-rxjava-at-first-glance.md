@@ -14,7 +14,7 @@ categories: [Android, RxJava]
 
 * **ReactiveX** is an API that focuses on **asynchronous composition** and **manipulation of observable streams of data or events** by using a combination of the Observer pattern, Iterator pattern, and features of Functional Programming.
 
-![ReactiveX](/assets/20160413/reactivex-flow.png)
+![ReactiveX](/assets/images/reactivex-flow.png)
 
 * **RxJava** is part of ReactiveX, a group of open source libraries. They have libraries in many different languages, including JavaScript, Groovy, Ruby, Java, C#, and the list goes on. 
 

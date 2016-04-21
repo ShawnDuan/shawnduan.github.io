@@ -17,4 +17,4 @@ Contact Me:
 * Email: *duan1216@gmail.com*
 * Wechat: *duan1216*
 
-My Resume is [here](/assets/resume.pdf).
+My Resume is [here](/assets/files/resume.pdf).
