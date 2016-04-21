@@ -6,9 +6,9 @@ comments: true
 categories: [Android, RxJava]
 ---
 
-## Ways to create `Observable`
+## Ways to create Observable
 
-### `Observable.create()`
+### Observable.create()
 
 Create an Observable from scratch by means of a function defining the rule/schedule (`Observable.OnSubscribe`) of event triggering. `call()` will be called once this `Observable` is subscribed.
 
@@ -24,7 +24,7 @@ Observable observable = Observable.create(new Observable.OnSubscribe<String>() {
 });
 ```
 
-### `Observable.just()`
+### Observable.just()
 
 Convert an object or several objects into an Observable that emits that object or those objects (one to nice objects are allowed.) The returned `Observable` is gonna emit these objects in the same order as they are given in the parameter list, once it is subscribed.
 
@@ -32,7 +32,7 @@ Convert an object or several objects into an Observable that emits that object o
 Observable observable = Observable.just("Hello", "Hi", "Aloha");
 ```
 
-### `Observable.from()`
+### Observable.from()
 
 Convert an Iterable, a Future, or an Array into an Observable that emits the containing objects in order.
 
@@ -41,11 +41,13 @@ String[] words = {"Hello", "Hi", "Aloha"};
 Observable observable = Observable.from(words);
 ```
 
-> **Notice: ** These three examples creating `Observables` are equivalent.
+------
+
+> **Notice:** These three examples creating `Observables` are equivalent.
 
 ------
 
-### `Observable.defer()`
+### Observable.defer()
 
 The Defer operator waits until an observer subscribes to it, and then it generates an fresh Observable on each subscription, typically with an Observable factory function.
 
@@ -64,4 +66,4 @@ Observable.defer(new Func0<Observable<Provider.AccountInfo>>() {	// observable f
         });
 ```
 
-> **Notice: ** Nest `Observable.just()/from()` in `Observable.defer()` is a way to generate an observable, and in the meantime, make sure this observable is not generated too early before it's actually been subscribed.
+> **Notice:** Nest `Observable.just()/from()` in `Observable.defer()` is a way to generate an observable, and in the meantime, make sure this observable is not generated too early before it's actually been subscribed.

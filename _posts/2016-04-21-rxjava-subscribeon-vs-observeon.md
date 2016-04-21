@@ -6,7 +6,7 @@ comments: true
 categories: [Android, RxJava]
 ---
 
-## `subscribeOn()` vs `observeOn()`
+## subscribeOn() vs observeOn()
 
 One common misconception about RxJava is that it’s asynchronous, but everything is synchronous by default, actually. When you build a stream, you are just constructing it to the point where we actually subscribe to it. When you subscribe, you build it all together and then actually execute it. **Until you call subscribe, you’re only constructing a stream.**
 
@@ -16,7 +16,7 @@ By default, an Observable and the chain of operators that you apply to it will d
 
 For this reason, you may call `ObserveOn` multiple times at various points during the chain of Observable operators in order to change on which threads certain of those operators operate. Meanwhile, only one `SubscribeOn` should called to designate the starting thread.
 
-![schedulers](/assets/images/subscribeon-vs-observeon.png)
-
 * `subscribeOn()`: where events are created.
 * `observeOn()`: where events are manipulated and consumed.
+
+![schedulers](/assets/images/subscribeon-vs-observeon.png)
