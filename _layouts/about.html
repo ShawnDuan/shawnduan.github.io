@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+    {% include nav.html %}
+    
+    <!-- Page Header -->
+    <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                        <hr class="small">
+                        <span class="subheading">{{ page.description }}</span>
+                        <div>
+                            <br>
+                            <ul class="list-inline text-center">
+                                {% if site.github_username %}
+                                <li>
+                                    <a href="https://github.com/{{ site.github_username }}" target="_blank">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                {% endif %}
+                                {% if site.weibo_username %}
+                                <li>
+                                    <a href="http://weibo.com/{{ site.weibo_username }}" target="_blank">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                {% endif %}
+                                {% if site.twitter_username %}
+                                <li>
+                                    <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                {% endif %}
+                                {% if site.linkedin_username %}
+                                <li>
+                                    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                {% endif %}
+                                {% if site.email_username %}
+                                <li>
+                                    <a href="mailto:{{ site.email_username }}">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                        <p>
+                            I'm Shawn Duan, a software engineer with two years experience. I got my master degree from Penn State University. Now I'm working in Seagate Technology, as an Android developer.
+                        </p>
+                        <p>
+                            Find My Resume Here <a href="/assets/files/resume.pdf" target="_blank">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-list-alt fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+

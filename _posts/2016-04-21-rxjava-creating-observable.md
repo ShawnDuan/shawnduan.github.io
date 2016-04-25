@@ -40,12 +40,7 @@ Convert an Iterable, a Future, or an Array into an Observable that emits the con
 String[] words = {"Hello", "Hi", "Aloha"};
 Observable observable = Observable.from(words);
 ```
-
-------
-
 > **Notice:** These three examples creating `Observables` are equivalent.
-
-------
 
 ### Observable.defer()
 
