@@ -109,4 +109,13 @@ You can rename the commits here if you want. Save and quit. Check `git log` to v
 git commit --amend
 ```
 
+### Remove local untracked files
+
+```bash
+git clean -f -n 	# Show what will be deleted with the -n option
+git clean -f 		# Delete files
+git clean -f -d 	# Delete directories
+git clean -f -X 	# Delete ignored files
+git clean -f -x 	# Delete ignored as well as non-ignored files
+```
 
