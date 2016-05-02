@@ -152,9 +152,7 @@ if (getParentFragment() instanceof IFragmentStackHolder) {
 }
 ```
 
-> **Note:** 
-> 
-> The hierarchy is maintained like this: 
+> **Note:** The hierarchy is maintained like this: 
 `MainActivity --> MainFragment --> InnerFragment`, Where `InnerFragment` can be either a normal single Fragment or another Fragment-container, by implementing `IFragmentStackHolder`.
 
 ## Conclusion
