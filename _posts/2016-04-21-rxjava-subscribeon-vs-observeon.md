@@ -19,6 +19,12 @@ For this reason, you may call `observeOn` multiple times at various points durin
 * `subscribeOn()`: where events are created.
 * `observeOn()`: where events are manipulated and consumed.
 
-> **Special Case:** In one situation, multiple calling `subscribeOn` would be meanful, that is when you want to designate a specific thread for `doOnSubscribe`. The first `subscribeOn` below `doOnSubscribe` determines the thread for `doOnSubscribe`. In this case, multiple `subscribeOn` exist in the stream -- the very first one determines which thread the Observable will **begin** operating on.
+> **Special Case:** 
+> 
+> In one situation, multiple calling `subscribeOn` would be meanful, that is when you want to designate a specific thread for `doOnSubscribe`. 
+> 
+> The first `subscribeOn` **below** `doOnSubscribe` determines the thread for `doOnSubscribe`. In this case, multiple `subscribeOn` exist in the stream -- the very first one determines which thread the Observable will **begin** operating on.
+>
+> The thread for `doOnTerminate` depents on the neareast `observeOn` **above** it (no exception).
 
 ![schedulers](/assets/images/subscribeon-vs-observeon.png)
