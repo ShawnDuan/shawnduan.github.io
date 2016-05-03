@@ -249,6 +249,15 @@ hr.small {
     font-size: 36px;
   }
 }
+.post-archive > .archive-date {
+  color: #808080;
+  font-style: italic;
+}
+.post-archive > .archive-title > h3 {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 .section-heading {
   font-size: 36px;
   margin-top: 60px;

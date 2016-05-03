@@ -4,6 +4,7 @@ title:  "Most Used Git Operations"
 date:   2016-04-12
 comments: true
 categories: [Git]
+header-img: "img/git-bg.jpg"
 ---
 
 Some Git commands/behaviors most used in my daily work.
