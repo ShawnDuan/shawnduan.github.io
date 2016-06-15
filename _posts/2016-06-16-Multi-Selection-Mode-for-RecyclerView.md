@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Multi-Selection Mode for RecyclerView"
+date: 2016-06-14
 comments: true
 categories: [Android, RecyclerView]
 ---
@@ -14,6 +15,7 @@ Since `RecyclerView` doesn't care about the visual representation of individual 
 ### Methods for selected state
 
 Based on the use case, add the following methods into `RecyclerView.Adapter` subclass:
+
 * `boolean isSelected(int position)`
 * `void switchSelectedState(int position)`
 * `void clearSelectedState()`
@@ -168,7 +170,7 @@ private void updateToolbar(UpdateToolbarEvent event) {
     switch (event.getToolbarMode()) {
         case UpdateToolbarEvent.NORMAL_MODE:      // normal mode: only a main title.
             Log.d(TAG, "Update toolbar event: NORMAL_MODE");
-            setNavigationIcon();        // maybe it's a better idea to cache the last IconState before changing it to IconState.X, and use
+            setNavigationIcon();
             mIsInChoiceMode = false;
             setTitles(title, null);
             showChoiceModeActions(false);
