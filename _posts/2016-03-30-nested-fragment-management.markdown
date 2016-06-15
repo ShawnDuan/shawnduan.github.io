@@ -4,7 +4,9 @@ title:  "Nested Fragment Management"
 date:   2016-03-30 21:30:36 -0700
 comments: true
 categories: [Android, Fragment]
+header-img: "img/nested-bg.jpg"
 ---
+
 Since Android 4.2 (API 17), [Nested Fragment](http://developer.android.com/about/versions/android-4.2.html#NestedFragments) becames available, which is also available in Android Support Library.
 A handy method is provided as `getChildFragmentManager()`, which will return a private FragmentManager for placing and managing Fragments inside of this Fragment.
 
